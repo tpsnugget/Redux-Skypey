@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+sans:400,700");
+
+body {
+   font-weight: 400;
+   font-family: "Nunito Sans", sans-serif;
+}
+
 .Sidebar {
    width: 80px;
    background-color: rgba(32, 32, 35, 1);
    height: 100%;
    border-right: 1px colid rgba(189, 189. 192, 1);
    transition: width 0.3s;
+   overflow-y: scroll;
 }
 
 @media (min-width: 576px){

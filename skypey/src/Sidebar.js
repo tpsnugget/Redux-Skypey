@@ -1,9 +1,12 @@
 import React from "react"
+import User from "./User"
 import "./Sidebar.css"
 
-const Sidebar = () => {
+const Sidebar = ({ contacts }) => {
 
-   return <aside className="Sidebar">Sidebar</aside>
+   return <aside className="Sidebar">
+      {contacts.map(contact => <User user={contact} key={contact.user_id} />)}
+   </aside>
 
 }
 
